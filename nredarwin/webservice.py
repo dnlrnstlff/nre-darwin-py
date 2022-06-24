@@ -474,6 +474,7 @@ class ServiceDetails(ServiceDetailsBase):
         ("is_cancelled", "isCancelled"),
         ("disruption_reason", "disruptionReason"),
         ("overdue_message", "overdueMessage"),
+        ("cancel_reason", "cancelReason"),
         ("ata", "ata"),
         ("atd", "atd"),
         ("location_name", "locationName"),
@@ -520,6 +521,13 @@ class ServiceDetails(ServiceDetailsBase):
         A string that describes an overdue event
         """
         return self._overdue_message
+
+    @property
+    def cancel_reason(self):
+        """
+        A string that describes an cancellation reason
+        """
+        return self._cancel_reason
 
     @property
     def ata(self):
