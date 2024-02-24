@@ -36,7 +36,7 @@ class DarwinLdbSession(object):
     A connection to the Darwin LDB web service
     """
 
-    def __init__(self, wsdl=None, api_key=None, timeout=5):
+    def __init__(self, wsdl=None, api_key=None, timeout=30):
         """
         Constructor
 
